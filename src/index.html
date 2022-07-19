@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>SPA Demo deploy</title>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
   </head>
+
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li><button data-path="">Home</button></li>
+          <li><button data-path="contact">Contact</button></li>
+          <li><button data-path="about">About</button></li>
+        </ul>
+      </nav>
+    </header>
     <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+
+    <script src="./main.js" type="module" defer></script>
   </body>
 </html>
